@@ -1,7 +1,7 @@
-import { defineConfig } from 'vite'
-import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { defineConfig } from 'vite';
+import { svelte } from '@sveltejs/vite-plugin-svelte';
 
-// https://vite.dev/config/
+// Vite configuration for the birthday website
 export default defineConfig({
   plugins: [svelte()],
-})
+});
