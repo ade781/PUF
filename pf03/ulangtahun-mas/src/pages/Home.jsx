@@ -21,13 +21,20 @@ export default function Home() {
             <img src="/images/cover.jpg" alt="Sampul" className="w-full rounded-2xl shadow-xl" />
           </div>
         </div>
+
+        <div className="container-narrow my-6 p-6 card">
+          <div className="text-3xl font-extrabold text-purple-600">Tailwind v4 hidup 🎉</div>
+          <p className="mt-2 text-gray-600">Kalau ini ungu dan kotaknya rounded + shadow, kamu berhasil.</p>
+          <button className="btn-primary mt-4">Tombol Tes</button>
+        </div>
+
       </section>
 
       <section className="container-narrow">
         <Countdown />
       </section>
 
-        <AudioPlayer />
+      <AudioPlayer />
     </div>
   );
 }
