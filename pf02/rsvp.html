@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RSVP</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="rsvp.html">RSVP</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="guestbook.html">Guestbook</a></li>
+          <li class="mode-toggle-container">
+            <button id="modeToggle" class="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="rsvp-section">
+        <h1>RSVP</h1>
+        <p>
+          Let us know if you&#39;ll be able to join the celebration! Please fill
+          out the form below. None of the data is sent to a server; it is
+          simply displayed back to you as a confirmation.
+        </p>
+        <div class="form-container">
+          <form id="rsvpForm">
+            <div class="form-group">
+              <label for="rsvpName">Name:</label>
+              <input type="text" id="rsvpName" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="rsvpEmail">Email:</label>
+              <input type="email" id="rsvpEmail" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="rsvpAttendance">Will you attend?</label>
+              <select id="rsvpAttendance" name="attendance" required>
+                <option value="">Select...</option>
+                <option value="yes">Yes, can&#39;t wait!</option>
+                <option value="no">No, unfortunately</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="rsvpGuests">Number of guests (including you):</label>
+              <input type="number" id="rsvpGuests" name="guests" min="1" max="10" value="1" />
+            </div>
+            <div class="form-group">
+              <label for="rsvpMessage">Comments:</label>
+              <textarea id="rsvpMessage" name="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn">Submit RSVP</button>
+          </form>
+          <div id="rsvpThankYou" class="thank-you hidden">
+            <h3>Thank you for your response!</h3>
+            <p>Your RSVP has been recorded. We look forward to celebrating with you!</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Birthday Celebration. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

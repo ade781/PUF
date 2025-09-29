@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--
+      This is the main entry point for your birthday web page.  It
+      declares the document type and sets up the character set and
+      responsive viewport meta tags.  A single external stylesheet
+      provides all of the colours, layout and typography for the
+      entire site.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Celebration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Global navigation bar.  It appears on every page and
+         allows visitors to navigate between the sections of the
+         website. -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="rsvp.html">RSVP</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="guestbook.html">Guestbook</a></li>
+          <li class="mode-toggle-container">
+            <button id="modeToggle" class="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero section with a celebratory greeting, a live countdown
+           timer and a hidden surprise message that can be revealed by
+           clicking a button.  The layout and colours are handled in
+           style.css. -->
+      <section class="hero">
+        <h1>Happy Birthday!</h1>
+        <p>Let&#39;s celebrate this special day together</p>
+        <div id="countdown">
+          <div>
+            <span id="days">0</span><small>Days</small>
+          </div>
+          <div>
+            <span id="hours">00</span><small>Hours</small>
+          </div>
+          <div>
+            <span id="minutes">00</span><small>Minutes</small>
+          </div>
+          <div>
+            <span id="seconds">00</span><small>Seconds</small>
+          </div>
+        </div>
+        <button id="surpriseButton" class="btn">Click for Surprise!</button>
+        <div id="surpriseMessage" class="hidden">
+          <p class="message">
+            Wishing you all the joy and happiness on your birthday! 🎉
+          </p>
+        </div>
+      </section>
+      <!-- Event details.  Feel free to customise the date, time and
+           location to match your own celebration. -->
+      <section class="details">
+        <h2>Party Details</h2>
+        <p>Date: <strong>October 1, 2025</strong></p>
+        <p>Time: <strong>7:00&nbsp;PM</strong></p>
+        <p>Location: <strong>[Your Location Here]</strong></p>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Birthday Celebration. All rights reserved.</p>
+    </footer>
+    <!-- Load the shared JavaScript file.  It contains the
+         countdown logic, the surprise toggle and a small confetti
+         animation. -->
+    <script src="script.js"></script>
+  </body>
+</html>

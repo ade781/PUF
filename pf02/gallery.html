@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation reused across all pages -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="timeline.html">Timeline</a></li>
+          <li><a href="rsvp.html">RSVP</a></li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="guestbook.html">Guestbook</a></li>
+          <li class="mode-toggle-container">
+            <button id="modeToggle" class="mode-toggle" aria-label="Toggle dark mode">🌙</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="gallery">
+        <h1>Gallery</h1>
+        <p>
+          Share your favourite moments! Replace the placeholder images
+          with your own photos. You can add or remove items in the
+          grid as needed – the layout will adapt automatically.
+        </p>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/photo1.jpg" alt="Birthday memory 1" />
+            <p>Caption 1</p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photo2.jpg" alt="Birthday memory 2" />
+            <p>Caption 2</p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/photo3.jpg" alt="Birthday memory 3" />
+            <p>Caption 3</p>
+          </div>
+          <!-- Add more gallery-item blocks as needed -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Birthday Celebration. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
